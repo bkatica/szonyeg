@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="szelek">20dp</dimen>
+    <dimen name="koztes">10dp</dimen>
+    <dimen name="betumeret">35sp</dimen>
+    <dimen name="minMag">48dp</dimen>
+    <dimen name="kepSzel">100dp</dimen>
+    <dimen name="kepMag">150dp</dimen>
+    <dimen name="alcim">20sp</dimen>
+</resources>

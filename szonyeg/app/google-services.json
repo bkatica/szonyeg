@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "860366668079",
+    "project_id": "androidszonyeg-38947",
+    "storage_bucket": "androidszonyeg-38947.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860366668079:android:e6242007d5f25dcd3da1da",
+        "android_client_info": {
+          "package_name": "com.example.szonyeg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860366668079-dql00rqf55pdkljcjr5e02iddhc0tigu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.szonyeg",
+            "certificate_hash": "e0a9248ce6fe0b8401a8c17ab98dcea5578bb066"
+          }
+        },
+        {
+          "client_id": "860366668079-knn50jpj87lvu4p4cskrffiurk171ko4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJTj7j3FlKCTbh8paMjy4ewormzcwBGmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860366668079-knn50jpj87lvu4p4cskrffiurk171ko4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

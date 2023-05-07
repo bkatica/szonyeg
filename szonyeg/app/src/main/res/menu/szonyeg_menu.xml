@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/kereses"
+        android:title="@string/kereses"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        />
+    <item
+        android:id="@+id/cart"
+        android:title="@string/kosar"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_menu_item"
+        />
+    <item
+        android:id="@+id/nezet"
+        android:title="Nézet"
+        android:icon="@drawable/baseline_view_module_24"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/log_out_button"
+        android:title="Kijelentkezés"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_logout_24"
+        app:actionViewClass="android.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Beállítások"
+        app:showAsAction="never"
+        app:actionViewClass="android.widget.SearchView"
+        />
+</menu>

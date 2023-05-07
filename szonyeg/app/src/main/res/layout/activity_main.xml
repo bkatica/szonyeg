@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:scrollbars="vertical">
+
+    <EditText
+        android:id="@+id/editTextFelhasznaloNev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="@dimen/minMag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textViewBej"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:text="@string/bejelentkezes"
+        android:textAlignment="center"
+        android:textSize="@dimen/betumeret"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFelhasznaloNev"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextJelszo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/jelszo"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/minMag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFelhasznaloNev"
+        app:layout_constraintVertical_bias="0.176"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/bejelentkezesGomb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:text="@string/bejelentkezes"
+        android:onClick="bejelentkezni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextJelszo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/regisztracioGomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/szelek"
+        android:layout_marginBottom="152dp"
+        android:onClick="regisztralni"
+        android:text="@string/regisztracio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFelhasznaloNev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

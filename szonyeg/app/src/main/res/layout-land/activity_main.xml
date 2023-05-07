@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/regisztracioGomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:layout_gravity="right"
+        android:onClick="regisztralni"
+        android:text="@string/regisztracio"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewBej"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:text="@string/bejelentkezes"
+        android:textAlignment="center"
+        android:textSize="@dimen/betumeret"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextFelhasznaloNev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="@dimen/minMag"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextJelszo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/jelszo"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/minMag" />
+
+    <Button
+        android:id="@+id/bejelentkezesGomb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:onClick="bejelentkezni"
+        android:text="@string/bejelentkezes"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</LinearLayout>
+</ScrollView>

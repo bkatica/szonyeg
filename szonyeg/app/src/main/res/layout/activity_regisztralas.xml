@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisztralasActivity">
+
+    <Button
+        android:id="@+id/ubMegse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginEnd="@dimen/szelek"
+        android:textAlignment="center"
+        android:layout_alignParentEnd="true"
+        android:text="@string/megse"
+        android:onClick="megsem"
+        />
+
+    <TextView
+        android:id="@+id/utvRegisztralas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/regisztracio"
+        android:textSize="@dimen/betumeret"
+        android:textStyle="italic"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:layout_below="@id/ubMegse"/>
+
+    <EditText
+        android:id="@+id/uetNev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/utvRegisztralas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/felhasznalonev"
+        android:inputType="text"
+        android:minHeight="@dimen/minMag" />
+
+    <EditText
+        android:id="@+id/uetEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uetNev"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="@dimen/minMag" />
+
+    <EditText
+        android:id="@+id/uetJelszo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uetEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/jelszo"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/minMag" />
+
+    <EditText
+        android:id="@+id/uetJelszoMegerosites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uetJelszo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/jelszomegerositese"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/minMag" />
+
+    <EditText
+        android:id="@+id/uetTeloSzam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uetJelszoMegerosites"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/telefonszam"
+        android:inputType="phone"
+        android:minHeight="@dimen/minMag" />
+
+    <Spinner
+        android:id="@+id/usTeloFajta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uetTeloSzam"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:minHeight="@dimen/minMag"/>
+
+    <EditText
+        android:id="@+id/uetPostacim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usTeloFajta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:ems="12"
+        android:hint="@string/postacim"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:maxLines="2"
+        android:minHeight="@dimen/minMag" />
+
+    <RadioGroup
+        android:id="@+id/urElVas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uetPostacim"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/minMag">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/elado"
+            android:layout_marginEnd="@dimen/koztes"/>
+        <RadioButton
+            android:id="@+id/urVasarlo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/vasarlo"
+            android:layout_marginStart="@dimen/koztes"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ubRegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/koztes"
+        android:layout_marginRight="@dimen/szelek"
+        android:layout_marginLeft="@dimen/szelek"
+        android:textAlignment="center"
+        android:text="@string/regisztracio"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/urElVas"
+        android:onClick="regisztralas"/>
+
+
+</RelativeLayout>
+</ScrollView>

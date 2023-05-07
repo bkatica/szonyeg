@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Szőnyeg Önnek</string>
+    <string name="felhasznalonev">Felhasználónév</string>
+    <string name="jelszo">Jelszó</string>
+    <string name="bejelentkezes">Bejelentkezés</string>
+    <string name="regisztracio">Regisztráció</string>
+    <string name="email">Email</string>
+    <string name="jelszomegerositese">Jelszó megerősítése</string>
+    <string name="megse">Mégse</string>
+    <string name="telefonszam">Telefonszám</string>
+    <string name="postacim">Város, utca/házszám, irszám, ország</string>
+    <string name="elado">Eladó</string>
+    <string name="vasarlo">Vásárló</string>
+    <string name="leiras">Leírás</string>
+    <string name="item_placeholder">Termék neve</string>
+    <string name="item_info_placeholder">Termék leírása</string>
+    <string name="kosarba">Kosárba</string>
+    <string name="ar">Ár</string>
+    <string name="kereses">Keresés</string>
+    <string name="kosar">Kosár</string>
+    <string-array name="teloFajta">
+        <item>Mobil</item>
+        <item>Munkahelyi</item>
+        <item>Otthoni</item>
+    </string-array>
+
+    <string-array name="shopping_item_nevek">
+        <item>Baba szőnyeg</item>
+        <item>Kocsis szőnyeg</item>
+        <item>Virágos szőnyeg</item>
+        <item>Rongy szőnyeg</item>
+        <item>Mintás szőnyeg</item>
+        <item>Szőttes szőnyeg</item>
+        <item>Perzsa szőnyeg</item>
+    </string-array>
+
+    <string-array name="shopping_item_infok">
+        <item>Biztonságos játékszőnyeg kisbabáknak.</item>
+        <item>Közlekedj okosan.</item>
+        <item>Irány a természet!</item>
+        <item/>
+        <item>Modern, élénk</item>
+        <item>Hagyomány és nosztalgia</item>
+        <item>Ha még nem lenne</item>
+    </string-array>
+
+    <array name="shopping_item_kepek">
+        <item>@drawable/baba</item>
+        <item>@drawable/kocsis</item>
+        <item>@drawable/viragos</item>
+        <item>@drawable/rongy</item>
+        <item>@drawable/mintas</item>
+        <item>@drawable/szottes</item>
+        <item>@drawable/perzsa</item>
+    </array>
+
+    <array name="shopping_item_arak">
+        <item>8000,-Ft</item>
+        <item>5500,-Ft</item>
+        <item>3900,-Ft</item>
+        <item>700,-Ft</item>
+        <item>10000,-Ft</item>
+        <item>5000,-Ft</item>
+        <item>12000,-Ft</item>
+    </array>
+</resources>
